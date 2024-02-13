@@ -65,6 +65,8 @@ api.getContent = {
       language = proposedLang;
     }
 
+    console.log(new Date());
+
     if (IS_PROD) {
       res.sendFile(`${CONTENT_CACHE_PATH}${language}.json`);
     } else {
