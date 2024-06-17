@@ -261,7 +261,7 @@ export default {
         return;
       }
 
-      const file = `/static/audio/${theme}/${sound}`;
+      const file = `https://habitica-assets.s3.amazonaws.com/mobileApp/sounds/${theme}/${sound}`;
 
       if (this.audioSuffix === null) {
         this.audioSource = document.createElement('source');
