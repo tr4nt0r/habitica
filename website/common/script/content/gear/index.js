@@ -35,6 +35,8 @@ const gear = {
  */
 const flat = {};
 
+const canOwnFuncTrue = () => true;
+
 each(GEAR_TYPES, type => {
   const allGearTypes = CLASSES.concat(['base', 'special', 'mystery', 'armoire']);
 
@@ -57,7 +59,6 @@ each(GEAR_TYPES, type => {
       });
 
       if (item.event) {
-        const canOwnFuncTrue = () => true;
         const _canOwn = item.canOwn || canOwnFuncTrue;
 
         item.canOwn = user => {
