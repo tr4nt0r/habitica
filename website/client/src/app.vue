@@ -433,6 +433,11 @@ export default {
         this.$store.state.isUserLoaded = true;
         Analytics.setUser();
         Analytics.updateUser();
+        if (window && window['habitica-i18n']) {
+          if (this.user.preferences.language === window['habitica-i18n'].language.code) {
+            return null;
+          }
+        }
         return axios.get(
           '/api/v4/i18n/browser-script',
           {
