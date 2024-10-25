@@ -377,12 +377,12 @@ function _getMembersForItem (type) {
  * @apiGroup Member
  *
  * @apiParam (Path) {UUID} groupId The group id ('party' for the user party is accepted)
- * @apiParam (Query) {UUID} lastId Query parameter to specify the last member
+ * @apiParam (Query) {UUID} [lastId] Query parameter to specify the last member
  *                                 returned in a previous request to this route and
  *                                 get the next batch of results.
  * @apiParam (Query) {Number} limit=30 BETA Query parameter
  *                                     to specify the number of results to return. Max is 60.
- * @apiParam (Query) {Boolean} includeAllPublicFields If set to `true`
+ * @apiParam (Query) {Boolean} [includeAllPublicFields] If set to `true`
  *                                                    then all public fields for members
  *                                                    will be returned (similar to when making
  *                                                    a request for a single member).

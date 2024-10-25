@@ -17,7 +17,7 @@ const api = {};
  *                  valorousPresence, intimidate, pickPocket, backStab, toolsOfTrade,
  *                  stealth, heal, protectAura, brightness, healAll,
  *                  snowball, spookySparkles, seafoam, shinySeed} spellId The skill to cast.
- * @apiParam (Query) {UUID} targetId Query parameter, necessary if the spell is
+ * @apiParam (Query) {UUID} [targetId] Query parameter, necessary if the spell is
  *                                   cast on a party member or task. Not used if the spell
  *                                   is casted on the user or the user's current party.
  * @apiParamExample {json} Query example:
